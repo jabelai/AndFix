@@ -37,3 +37,12 @@ project.properties
 /assets
 /res
 /dist
+samples/samples.iml
+samples/AndFixDemo/build
+samples/AndFixDemo/AndFixDemo.iml
+samples/AndFixDemo/gradle/
+AndFix.iml
+samples/AndFixDemo/.idea/*
+andfix/andfix.iml
+/.idea
+local.properties

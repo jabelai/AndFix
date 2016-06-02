@@ -148,6 +148,7 @@ public class PatchManager {
 	 * @param path
 	 *            patch path
 	 * @throws IOException
+	 *            io exception
 	 */
 	public void addPatch(String path) throws IOException {
 		File src = new File(path);
@@ -177,7 +178,7 @@ public class PatchManager {
 	}
 
 	/**
-	 * load patch,call when plugin be loaded. used for plugin architecture.</br>
+	 * load patch,call when plugin be loaded. used for plugin architecture.
 	 * 
 	 * need name and classloader of the plugin
 	 * 

@@ -97,7 +97,7 @@ extern void __attribute__ ((visibility ("hidden"))) dalvik_replaceMethod(
 
 	meth->prototype = target->prototype;
 	meth->insns = target->insns;
-	meth->nativeFunc = target->nativeFunc;
+	meth->nativeFunc = *&(target->nativeFunc);
 }
 
 extern void dalvik_setFieldFlag(JNIEnv* env, jobject field) {

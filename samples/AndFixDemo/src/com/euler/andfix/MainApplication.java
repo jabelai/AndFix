@@ -20,9 +20,12 @@ package com.euler.andfix;
 import java.io.IOException;
 
 import android.app.Application;
+import android.content.Context;
 import android.os.Environment;
 import android.util.Log;
 
+import com.alipay.euler.andfix.hook.HookDefine;
+import com.alipay.euler.andfix.hook.HookManager;
 import com.alipay.euler.andfix.patch.PatchManager;
 
 /**
@@ -63,5 +66,7 @@ public class MainApplication extends Application {
 			Log.e(TAG, "", e);
 		}
 
+
+        HookManager.applyHooks(HookDefine.class);
 	}
 }

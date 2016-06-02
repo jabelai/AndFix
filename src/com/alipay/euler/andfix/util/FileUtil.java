@@ -40,6 +40,7 @@ public class FileUtil {
 	 * @param dest
 	 *            target file
 	 * @throws IOException
+	 *			   io exception
 	 */
 	public static void copyFile(File src, File dest) throws IOException {
 		FileChannel inChannel = null;
